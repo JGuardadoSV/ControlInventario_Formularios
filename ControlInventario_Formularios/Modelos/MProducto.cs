@@ -33,6 +33,7 @@ namespace ControlInventario.Modelos
 
         public void Actualizar(Producto producto)
         {
+            //Agregar comentario cualquiera
             string consulta = "Update productos set nombre=@nombre,precio=@precio,existencias=@existencias,IdLinea_FK=@idlinea where IdProducto=@idproducto";
             DynamicParameters parametros = new DynamicParameters();
             parametros.Add("@nombre", producto.Nombre, DbType.String);
