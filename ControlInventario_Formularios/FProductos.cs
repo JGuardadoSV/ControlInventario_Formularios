@@ -44,5 +44,23 @@ namespace ControlInventario_Formularios
             //Cargar nuevamente los datos
             productoBindingSource.DataSource = cProducto.Consultar();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FRegistroProductos formulario = new FRegistroProductos();
+            formulario.ShowDialog();
+            //Cargar nuevamente los datos
+            productoBindingSource.DataSource = cProducto.Consultar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Producto producto = new Producto();
+            producto = (Producto)productoBindingSource.Current;
+
+            cProducto.Eliminar(producto);
+            //Cargar nuevamente los datos
+            productoBindingSource.DataSource = cProducto.Consultar();
+        }
     }
 }
