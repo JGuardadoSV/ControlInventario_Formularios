@@ -34,5 +34,18 @@ namespace ControlInventario_Formularios
             else
                 productoBindingSource.DataSource = producto; // para editar uno existente
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            producto = new Producto();
+            producto = (Producto)productoBindingSource.Current;
+
+            if (producto.IdProducto == 0)
+                cProducto.Insertar(producto);
+            else
+                cProducto.Actualizar(producto);
+
+            this.Close();
+        }
     }
 }

@@ -104,6 +104,7 @@ namespace ControlInventario_Formularios
             this.idLinea_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productoBindingSource, "IdLinea_FK", true));
             this.idLinea_FKComboBox.DataSource = this.lineaBindingSource;
             this.idLinea_FKComboBox.DisplayMember = "Nombre";
+            this.idLinea_FKComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.idLinea_FKComboBox.FormattingEnabled = true;
             this.idLinea_FKComboBox.Location = new System.Drawing.Point(153, 139);
             this.idLinea_FKComboBox.Name = "idLinea_FKComboBox";
@@ -150,6 +151,7 @@ namespace ControlInventario_Formularios
             this.button1.TabIndex = 12;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRegistroProductos
             // 

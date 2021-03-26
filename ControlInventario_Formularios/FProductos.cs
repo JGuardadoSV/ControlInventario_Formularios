@@ -1,4 +1,5 @@
 ﻿using ControlInventario.Controladores;
+using ControlInventario.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,17 @@ namespace ControlInventario_Formularios
             
 
             //3 llenar el datasource del bindingsource primario
+            productoBindingSource.DataSource = cProducto.Consultar();
+        }
+
+        private void productoDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Producto producto = new Producto();
+            producto = (Producto)productoBindingSource.Current;
+
+            FRegistroProductos formulario = new FRegistroProductos(producto);
+            formulario.ShowDialog();
+            //Cargar nuevamente los datos
             productoBindingSource.DataSource = cProducto.Consultar();
         }
     }
