@@ -56,7 +56,7 @@ namespace ControlInventario_Formularios
             existenciasLabel.Location = new System.Drawing.Point(82, 195);
             existenciasLabel.Name = "existenciasLabel";
             existenciasLabel.Size = new System.Drawing.Size(63, 13);
-            existenciasLabel.TabIndex = 1;
+            existenciasLabel.TabIndex = 7;
             existenciasLabel.Text = "Existencias:";
             // 
             // idLinea_FKLabel
@@ -74,7 +74,7 @@ namespace ControlInventario_Formularios
             nombreLabel.Location = new System.Drawing.Point(98, 116);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(47, 13);
-            nombreLabel.TabIndex = 7;
+            nombreLabel.TabIndex = 1;
             nombreLabel.Text = "Nombre:";
             // 
             // precioLabel
@@ -83,7 +83,7 @@ namespace ControlInventario_Formularios
             precioLabel.Location = new System.Drawing.Point(105, 169);
             precioLabel.Name = "precioLabel";
             precioLabel.Size = new System.Drawing.Size(40, 13);
-            precioLabel.TabIndex = 9;
+            precioLabel.TabIndex = 5;
             precioLabel.Text = "Precio:";
             // 
             // productoBindingSource
@@ -96,7 +96,7 @@ namespace ControlInventario_Formularios
             this.existenciasTextBox.Location = new System.Drawing.Point(153, 192);
             this.existenciasTextBox.Name = "existenciasTextBox";
             this.existenciasTextBox.Size = new System.Drawing.Size(121, 20);
-            this.existenciasTextBox.TabIndex = 2;
+            this.existenciasTextBox.TabIndex = 8;
             // 
             // idLinea_FKComboBox
             // 
@@ -122,7 +122,7 @@ namespace ControlInventario_Formularios
             this.nombreTextBox.Location = new System.Drawing.Point(153, 113);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(121, 20);
-            this.nombreTextBox.TabIndex = 8;
+            this.nombreTextBox.TabIndex = 2;
             // 
             // precioTextBox
             // 
@@ -130,7 +130,7 @@ namespace ControlInventario_Formularios
             this.precioTextBox.Location = new System.Drawing.Point(153, 166);
             this.precioTextBox.Name = "precioTextBox";
             this.precioTextBox.Size = new System.Drawing.Size(121, 20);
-            this.precioTextBox.TabIndex = 10;
+            this.precioTextBox.TabIndex = 6;
             // 
             // label1
             // 
@@ -139,18 +139,19 @@ namespace ControlInventario_Formularios
             this.label1.Location = new System.Drawing.Point(80, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(284, 25);
-            this.label1.TabIndex = 11;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Administracion de productos";
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(139, 250);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 56);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRegistroProductos
