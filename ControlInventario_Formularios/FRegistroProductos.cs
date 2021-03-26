@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ControlInventario.Controladores;
+using ControlInventario.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,25 @@ namespace ControlInventario_Formularios
 {
     public partial class FRegistroProductos : Form
     {
-        public FRegistroProductos()
+        CProducto cProducto = new CProducto();
+        CLinea cLinea = new CLinea();
+        Producto producto = new Producto();
+
+
+        public FRegistroProductos(Producto p = null)
         {
             InitializeComponent();
+            producto = p;
+        }
+
+        private void FRegistroProductos_Load(object sender, EventArgs e)
+        {
+            lineaBindingSource.DataSource = cLinea.Consultar();
+
+            if (producto == null)
+                productoBindingSource.AddNew(); // para registrar uno nuevo
+            else
+                productoBindingSource.DataSource = producto; // para editar uno existente
         }
     }
 }
