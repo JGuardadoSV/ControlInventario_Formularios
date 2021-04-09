@@ -63,14 +63,14 @@ namespace ControlInventario_Formularios
             // entidadesToolStripMenuItem1
             // 
             this.entidadesToolStripMenuItem1.Name = "entidadesToolStripMenuItem1";
-            this.entidadesToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
+            this.entidadesToolStripMenuItem1.Size = new System.Drawing.Size(169, 30);
             this.entidadesToolStripMenuItem1.Text = "Lineas";
             this.entidadesToolStripMenuItem1.Click += new System.EventHandler(this.entidadesToolStripMenuItem1_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(169, 30);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -86,13 +86,14 @@ namespace ControlInventario_Formularios
             // comprasToolStripMenuItem
             // 
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(159, 30);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.comprasToolStripMenuItem.Text = "Compras";
+            this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(159, 30);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
             // Form1

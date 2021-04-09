@@ -30,5 +30,11 @@ namespace ControlInventario_Formularios
             formulario.ShowDialog();
             
         }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCompras formulario = new FCompras();
+            formulario.ShowDialog();
+        }
     }
 }

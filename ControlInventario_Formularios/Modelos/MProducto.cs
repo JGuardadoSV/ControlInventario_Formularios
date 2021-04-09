@@ -26,6 +26,7 @@ namespace ControlInventario.Modelos
             parametros.Add("@existencias", producto.Existencias, DbType.Int32);
             parametros.Add("@idlinea", producto.IdLinea_FK, DbType.Int32);
             //****************************
+
             cn.Open();
             cn.Execute(consulta, parametros, commandType: CommandType.Text);
             cn.Close();

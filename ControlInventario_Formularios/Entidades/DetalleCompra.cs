@@ -14,6 +14,15 @@ namespace ControlInventario.Entidades
         private double precio;
         private Compra compra;
 
+        private int idProducto;
+
+        public int IdProducto
+        {
+            get { return idProducto; }
+            set { idProducto = value; }
+        }
+
+
         public int IdDetalleCompra
         {
             get { return idDetalleCompra; }
