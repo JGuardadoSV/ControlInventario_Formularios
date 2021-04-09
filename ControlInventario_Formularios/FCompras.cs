@@ -63,6 +63,7 @@ namespace ControlInventario_Formularios
         {
             CCompra cCompra = new CCompra();
             cCompra.GuardarCompra(listado);
+            this.Close();
         }
     }
 }
